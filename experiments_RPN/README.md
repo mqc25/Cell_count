@@ -1,9 +1,6 @@
 # Region Proposal Network (RPN)
 The folder contains a RPN implementation for generating regions from Basal Cell images to estimate cell density.
 
-### Note
-* The model checkpoint (needed for inference) is not provided here due to its large size. It could be provided upon request.
-
 ### Prerequisites
 Running **train/predict** requires correct path to the input data and the following **packages** for ```python-3.x```
 
