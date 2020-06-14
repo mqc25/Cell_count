@@ -64,26 +64,6 @@ if __name__ == "__main__":
             else:
                 print("No Bounding Box Detected for {}".fromat(file_name))
                 continue
-
-
-        """
-        bbox = model_obj.get_prediction(args.path_to_image)
-        if len(bbox) > 0:
-            if len(np.unique(bbox)) > 1:
-                image = rgb2gray(io.imread(args.path_to_image))
-                img_rgb = cv2.cvtColor(image.astype('float32'), cv2.COLOR_GRAY2RGB)
-                for arg in bbox:
-                    cv2.rectangle(img_rgb, (arg[0], arg[1]), (arg[2], arg[3]), color=(0, 0, 255), thickness=2)
-                #cv2.imwrite('prediction.png', img_rgb)
-                #print("PREDICTION SAVED!")
-                plt.imshow(img_rgb)
-                plt.show()
-
-            else:
-                print("NO Bounding Box Detected!")
-        else:
-            print("NO Bounding Box Detected!")
-        """
     else:
         print("IMAGE PATH AND MODEL WEIGHTS ARE REQUIRED!")
 
