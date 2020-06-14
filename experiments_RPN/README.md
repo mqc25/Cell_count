@@ -13,12 +13,19 @@ scikit-image==0.15.0
 torch==1.4.0+cu92
 torchvision==0.5.0+cu92
 ```
+### Annotation Fromat
+
+```image_name, cell_type, xmin, ymin, xmax, ymax  ```
+* **example**: 001.jpg, 'CELL', 277, 9, 381, 109
 
 #### Running Training Script
 ```python train.py -i "path_to_images\\" -a "path_to_annotation_file (csv)"```
 
+#### Running Evaluation Script
+```python evaluate.py -i "path_to_images\\" -a "path_to_annotation_file (csv)" -f "path_to_weights (checkpoints\\RPN_CELL.pth)"```
+
 #### Running Prediction Scripts
-```python predict.py -i "sample_img.jpg" -f "path_to_weights (RPN_CELL.pth)"```
+```python predict.py -i "sample_img.jpg" -f "path_to_weights (checkpoints\\RPN_CELL.pth)"```
 
 ### Data Statistics
 
