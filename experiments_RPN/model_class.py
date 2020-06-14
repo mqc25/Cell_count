@@ -152,7 +152,3 @@ class RPN:
         scores = output[0]['scores'].cpu().numpy()
         return bbox, scores
 
-    def evaluate(self, path_to_images=None, path_to_annotation=None):
-        if path_to_images and path_to_annotation:
-            pawss
-
