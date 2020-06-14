@@ -148,7 +148,11 @@ class RPN:
                 self.model.eval()
                 output = self.model(data)
 
-        #img = image.astype('float32')
-        #img_rgb = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
         bbox = np.squeeze(output[0]['boxes'].cpu().numpy())
-        return bbox
+        scores = output[0]['scores'].cpu().numpy()
+        return bbox, scores
+
+    def evaluate(self, path_to_images=None, path_to_annotation=None):
+        if path_to_images and path_to_annotation:
+            pawss
+
