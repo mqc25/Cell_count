@@ -19,10 +19,10 @@ torchvision==0.5.0+cu92
 * **example**: 001.jpg, 'CELL', 277, 9, 381, 109
 
 #### Running Training Script
-```python train.py -i "path_to_images\\" -a "path_to_annotation_file (csv)"```
+```python train.py -i "path_to_images\\" -a "path_to_annotation_file (train.csv)"```
 
 #### Running Evaluation Script
-```python evaluate.py -i "path_to_images\\" -a "path_to_annotation_file (csv)" -f "path_to_weights (checkpoints\\RPN_CELL.pth)"```
+```python evaluate.py -i "path_to_images\\" -a "path_to_annotation_file (val.csv)" -f "path_to_weights (checkpoints\\RPN_CELL.pth)"```
 
 #### Running Prediction Scripts
 ```python predict.py -i "sample_img.jpg" -f "path_to_weights (checkpoints\\RPN_CELL.pth)"```
