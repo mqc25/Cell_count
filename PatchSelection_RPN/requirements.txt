@@ -1,5 +1,5 @@
 matplotlib==3.1.1
-opencv-python==4.2.0
+opencv-python==4.8.1.78
 pandas==1.4.0
 numpy==1.17.4
 scikit-image==0.15.0
